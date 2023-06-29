@@ -16,8 +16,8 @@ namespace RestaurantAPI.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    City = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Street = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -35,16 +35,16 @@ namespace RestaurantAPI.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HasDelivery = table.Column<bool>(type: "bit", nullable: false),
-                    ContactEmail = table.Column<bool>(type: "bit", nullable: false),
-                    ContactNumber = table.Column<bool>(type: "bit", nullable: false),
-                    AdressId = table.Column<int>(type: "int", nullable: false)
+                    ContactEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ContactNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AddressId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Restaurants", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Restaurants_Adresses_AdressId",
-                        column: x => x.AdressId,
+                        name: "FK_Restaurants_Adresses_AddressId",
+                        column: x => x.AddressId,
                         principalTable: "Adresses",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -78,9 +78,9 @@ namespace RestaurantAPI.Migrations
                 column: "RestaurantId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Restaurants_AdressId",
+                name: "IX_Restaurants_AddressId",
                 table: "Restaurants",
-                column: "AdressId",
+                column: "AddressId",
                 unique: true);
         }
 

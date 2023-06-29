@@ -15,7 +15,7 @@ namespace RestaurantAPI
         {
             if(_dbContext.Database.CanConnect())
             {
-                if(_dbContext.Restaurants.Any())
+                if(!_dbContext.Restaurants.Any())
                 {
                     var restaurants = GetRestaurants();
                     _dbContext.Restaurants.AddRange(restaurants);

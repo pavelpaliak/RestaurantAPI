@@ -11,8 +11,8 @@ using RestaurantAPI.Entities;
 namespace RestaurantAPI.Migrations
 {
     [DbContext(typeof(RestaurantDBContext))]
-    [Migration("20230628082059_AddressColumnAdjustment")]
-    partial class AddressColumnAdjustment
+    [Migration("20230628134141_Insert")]
+    partial class Insert
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
