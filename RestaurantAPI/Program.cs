@@ -2,16 +2,20 @@ using RestaurantAPI;
 using RestaurantAPI.Entities;
 using RestaurantAPI.Services;
 using System.Reflection;
+using NLog.Web;
+using RestaurantAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Logging.ClearProviders();
+builder.Host.UseNLog();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<RestaurantDBContext>();
 builder.Services.AddScoped<RestaurantSeeder>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<IRestaurantService, RestaurantService>();
+builder.Services.AddScoped<ErrorHandlingMiddleware>();
 
 var app = builder.Build();
 var scope = app.Services.CreateScope();
@@ -22,11 +26,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
-
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseEndpoints(endpoints =>
 {
     app.MapControllers();
 });
+
 app.Run();
