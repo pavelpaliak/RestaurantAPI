@@ -141,3 +141,51 @@
 2023-07-04 18:51:12.0988 Info Configuration initialized.
 2023-07-04 18:51:12.0988 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.1.1908. Product version: 5.2.1+7ae091e0d46a77dff2ab034e1f30e8a7ea3e19f7. GlobalAssemblyCache: False
 2023-07-04 18:51:12.1016 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:06:48.0922 Info Message Template Auto Format enabled
+2023-07-05 11:06:48.1794 Warn Failed checking loading assembly name: NLog.Web.AspNetCore Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NLog.Config.AssemblyExtensionLoader.IsNLogConfigurationItemType(Type itemType)
+   at NLog.Config.AssemblyExtensionLoader.SkipAlreadyLoadedAssembly(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+2023-07-05 11:06:48.3553 Info Loading assembly name: NLog.Web.AspNetCore
+2023-07-05 11:06:48.4074 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.1.897. Product version: 5.3.1+3d09bd2528068040b4d572b9d25a03cbd89f2bf1. GlobalAssemblyCache: False
+2023-07-05 11:06:48.6836 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-07-05 11:06:48.6836 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-07-05 11:06:48.7768 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:06:48.8298 Info Configuration initialized.
+2023-07-05 11:06:48.8298 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.1.1908. Product version: 5.2.1+7ae091e0d46a77dff2ab034e1f30e8a7ea3e19f7. GlobalAssemblyCache: False
+2023-07-05 11:06:48.8298 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:10:25.4928 Info Message Template Auto Format enabled
+2023-07-05 11:10:25.5959 Warn Failed checking loading assembly name: NLog.Web.AspNetCore Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NLog.Config.AssemblyExtensionLoader.IsNLogConfigurationItemType(Type itemType)
+   at NLog.Config.AssemblyExtensionLoader.SkipAlreadyLoadedAssembly(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+2023-07-05 11:10:25.7564 Info Loading assembly name: NLog.Web.AspNetCore
+2023-07-05 11:10:25.7961 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.1.897. Product version: 5.3.1+3d09bd2528068040b4d572b9d25a03cbd89f2bf1. GlobalAssemblyCache: False
+2023-07-05 11:10:26.0295 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-07-05 11:10:26.0295 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-07-05 11:10:26.1946 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:10:26.2251 Info Configuration initialized.
+2023-07-05 11:10:26.2251 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.1.1908. Product version: 5.2.1+7ae091e0d46a77dff2ab034e1f30e8a7ea3e19f7. GlobalAssemblyCache: False
+2023-07-05 11:10:26.2280 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:30:29.2579 Info Message Template Auto Format enabled
+2023-07-05 11:30:29.3241 Warn Failed checking loading assembly name: NLog.Web.AspNetCore Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NLog.Config.AssemblyExtensionLoader.IsNLogConfigurationItemType(Type itemType)
+   at NLog.Config.AssemblyExtensionLoader.SkipAlreadyLoadedAssembly(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+2023-07-05 11:30:29.4415 Info Loading assembly name: NLog.Web.AspNetCore
+2023-07-05 11:30:29.4849 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.1.897. Product version: 5.3.1+3d09bd2528068040b4d572b9d25a03cbd89f2bf1. GlobalAssemblyCache: False
+2023-07-05 11:30:30.1716 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-07-05 11:30:30.1716 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-07-05 11:30:30.2654 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:30:30.2950 Info Configuration initialized.
+2023-07-05 11:30:30.2950 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.1.1908. Product version: 5.2.1+7ae091e0d46a77dff2ab034e1f30e8a7ea3e19f7. GlobalAssemblyCache: False
+2023-07-05 11:30:30.2950 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:31:49.9729 Info Message Template Auto Format enabled
+2023-07-05 11:31:50.2515 Warn Failed checking loading assembly name: NLog.Web.AspNetCore Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at NLog.Config.AssemblyExtensionLoader.IsNLogConfigurationItemType(Type itemType)
+   at NLog.Config.AssemblyExtensionLoader.SkipAlreadyLoadedAssembly(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+2023-07-05 11:31:50.7376 Info Loading assembly name: NLog.Web.AspNetCore
+2023-07-05 11:31:51.5161 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.1.897. Product version: 5.3.1+3d09bd2528068040b4d572b9d25a03cbd89f2bf1. GlobalAssemblyCache: False
+2023-07-05 11:31:51.7861 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2023-07-05 11:31:51.7861 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-07-05 11:31:51.8781 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
+2023-07-05 11:31:51.9221 Info Configuration initialized.
+2023-07-05 11:31:51.9221 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.1.1908. Product version: 5.2.1+7ae091e0d46a77dff2ab034e1f30e8a7ea3e19f7. GlobalAssemblyCache: False
+2023-07-05 11:31:51.9221 Info Validating config: TargetNames=allfile, exceptions, ConfigItems=40, FilePath=C:\Users\karin\OneDrive\Рабочий стол\Projekt1\ProjRazor\RestaurantAPI\RestaurantAPI\bin\Debug\net6.0\NLog.config
