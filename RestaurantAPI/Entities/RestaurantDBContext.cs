@@ -15,7 +15,7 @@ namespace RestaurantAPI.Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
-                .Property(u => u.Name)
+                .Property(u => u.Email)
                 .IsRequired();
 
             modelBuilder.Entity<Role>()
