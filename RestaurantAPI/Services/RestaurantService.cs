@@ -108,8 +108,8 @@ namespace RestaurantAPI.Services
                     .Include(r => r.Address)
                     .Include(r => r.Dishes)
                     .Where(r => query.SearchPhrase == null || (r.Name.ToLower().Contains(query.SearchPhrase.ToLower())
-                                || r.Description.ToLower()
-                                .Contains(query.SearchPhrase.ToLower())));
+                                                                || r.Description.ToLower()
+                                                                    .Contains(query.SearchPhrase.ToLower())));
 
             if (!string.IsNullOrEmpty(query.SortBy))
             {
