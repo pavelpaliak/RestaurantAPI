@@ -2,7 +2,7 @@
 using RestaurantAPI.Entities;
 using RestaurantAPI.Models;
 
-namespace RestaurantAPI.Validators
+namespace RestaurantAPI.Models.Validators
 {
     public class RegisterUserDtoValidator : AbstractValidator<RegisterUserDto>
     {
@@ -14,7 +14,7 @@ namespace RestaurantAPI.Validators
 
             RuleFor(x => x.Password)
                 .MinimumLength(6);
-            
+
             RuleFor(x => x.ConfirmPassword).Equal(e => e.Password);
 
             RuleFor(x => x.Email)

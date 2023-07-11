@@ -7,12 +7,12 @@ using RestaurantAPI.Middleware;
 using Microsoft.AspNetCore.Identity;
 using FluentValidation;
 using RestaurantAPI.Models;
-using RestaurantAPI.Validators;
 using FluentValidation.AspNetCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using RestaurantAPI.Authorization;
 using Microsoft.AspNetCore.Authorization;
+using RestaurantAPI.Models.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -60,6 +60,7 @@ builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<ErrorHandlingMiddleware>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 builder.Services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
+builder.Services.AddScoped<IValidator<RestaurantQuery>, RestaurantQueryValidator>();
 builder.Services.AddScoped<RequestTimeMiddleware>();
 builder.Services.AddScoped<IUserContextService, UserContextService>();
 builder.Services.AddHttpContextAccessor();
