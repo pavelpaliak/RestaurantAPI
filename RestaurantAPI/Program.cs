@@ -65,11 +65,22 @@ builder.Services.AddScoped<RequestTimeMiddleware>();
 builder.Services.AddScoped<IUserContextService, UserContextService>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(option =>
+{
+    option.AddPolicy("FrontEndClient", policyBuilder =>
+
+        policyBuilder.AllowAnyMethod()
+        .AllowAnyHeader()
+        .WithOrigins(builder.Configuration["AllowedOrigins"])
+        );
+});
 
 
 var app = builder.Build();
 var scope = app.Services.CreateScope();
 var seeder = scope.ServiceProvider.GetService<RestaurantSeeder>();
+app.UseStaticFiles();
+app.UseCors("FrontEndClient");
 // Configure the HTTP request pipeline.
 seeder.Seed();
 if (app.Environment.IsDevelopment())
